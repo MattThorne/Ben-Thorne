@@ -1,8 +1,8 @@
 :root {
     --main-font-color: black;
-    --secondary-font-color: red;
-    --main-color: blue;
-    --second-color: grey;
+    --secondary-font-color: turquoise;
+    --main-color: grey;
+    --second-color: white;
   }
 
 * {
@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
 }
+/*    Nav Bar    */
 
 .navbar {
     position: sticky;
@@ -22,11 +23,12 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 30px 5% 0 5%;
-    background-color: red;
+    background-color: transparent;
     transition: background-color 1s ease-in;
+    z-index: 2;
 }
 html:not([data-scroll='0']) .navbar {
-    background-color: blue;
+    background-color: var(--second-color)
   }
 
 .navbar-menu ul{
@@ -62,22 +64,48 @@ input{
 }
 
 .page{
-    height: 100vh;
+    z-index: 0;
 }
+
+/*      HOME PAGE      */
 .home-page{
+    height: 100vh;
+    position: relative;
     background-color: var(--second-color);
 }
+.home-page h1{
+    padding: 20% 20px 5% 20px;
+    font-size: 40px;
+
+}
+
+.home-page img{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    height: 80%;
+}
+
+
+
+/* Services Page */
 .services-page{
     background-color: var(--main-color);
+    height: 100vh;
 }
 .about-ben-page{
     background-color: var(--second-color);
+    height: 100vh;
 }
 .contact-page{
     background-color: var(--main-color);
+    height: 100vh;
 }
 
 
+
+
+/* ################  Mobile View  ############### */
 @media screen and (max-width: 480px) {
     .navbar {padding: 30px 0 0 0;}
     .navbar-logo{margin-left: 10px;}
@@ -88,7 +116,7 @@ input{
         position: absolute;
         top: 15px;
         right: 20px;
-        z-index: 1;
+        z-index: 2;
         text-align: center;
         line-height: 50px;
         width: 50px;
@@ -113,6 +141,7 @@ input{
         clip-path: circle(25px at calc(100% - 45px) 40px );
         background-color: var(--main-color);
         transition: all 0.3s ease-in-out;
+        
     }
 
     #active:checked ~ .navbar-menu{
