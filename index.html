@@ -6,53 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/cc4170926f.js"></script>
     
 
   </head>
 
   <body>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <h2>About Me</h2>
-        <p>Rebum ipsum sit rebum invidunt invidunt clita duo eirmod vero. Sea justo ea nonumy sadipscing erat nonumy, voluptua est takimata diam invidunt et est dolore dolor sadipscing. Sanctus erat clita amet at gubergren elitr, sit accusam eos consetetur et magna sed sit, no justo erat diam ea sit labore lorem, accusam ipsum vero lorem eos dolor takimata et sit. Ipsum lorem kasd at kasd ea invidunt nonumy consetetur invidunt. Lorem lorem kasd lorem ut dolore dolore eirmod kasd, voluptua tempor sit sanctus et et sit ea, ea invidunt ut ut erat stet et erat dolor dolor. Lorem kasd magna dolores.</p>
-      </div>
-  </div>
-    
-    <div class="heading">
-        <h1 class="ben_text">BEN THORNE</h1>
-        <img class="coverImg" src="images/Ben_Clear_Blur.png" alt="Main photo of Ben"> 
-
-        <div class="contact">
-          <h2>Contact me at:</h2>
-          <div class="links">
-            <ul>
-              <li><a href="https://www.instagram.com/victorialayzell/">
-                <i class="fa fa-instagram"></i><p>Instagram</p></a>
-              </li>
-              <li><a href = "mailto: m.thorne@hotmail.com">
-                <i class="fa fa-envelope-square"></i><p>email</p></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="aboutMe" onclick="openNav()" ><h2>About Me</h2></div>
-    </div>  
-
-
-
-
-
-    <script>
-      function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-      }
+    <div class="navbar">
+      <div class="navbar-logo"><h1>BT</h1></div>
+      <input type="checkbox" id="active" checked="checked"/>
+      <label for="active" class="navbar-bars"><i class="fa fa-bars"></i></label>
       
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
-      </script>
+      <div class="navbar-menu">
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Ben</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="navbar-line"></div>
+    </div>
+
+
+    <div class="home-page page"></div>
+    <div class="services-page page"></div>
+    <div class="about-ben-page page"></div>
+    <div class="contact-page page"></div>
   </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>
