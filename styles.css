@@ -93,6 +93,10 @@ input{
     font-size: 40px;
     font-weight: 300;
 }
+.home-page .textContainer h2{
+    font-weight: 100;
+    margin-right: 10px;
+}
 .home-page .imageContainer .mobile{
     display: none;
 }
@@ -127,17 +131,102 @@ input{
 
 
 
-/* Services Page */
+/* About Ben Page */
+.about-ben-page{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-ben-page .imageContainer{
+    width: 40%;
+    padding: 50px;
+    
+}
+.about-ben-page .imageContainer img{
+    width:100%;
+}
+.about-ben-page .textContainer{
+    position: relative;
+    width: 30%;
+    margin: 50px;
+    text-align: left;
+    
+}
+.about-ben-page .textContainer .main-text{
+    font-size: 30px;
+    margin-top: 20px;
+    color: black;
+    
+}
+.about-ben-page .textContainer .accreditations{
+    margin-top: 50px;
+}
+.about-ben-page .textContainer .accreditations h1{
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    font-weight: 100;
+    color: black;
+}
+.about-ben-page .textContainer .accreditations p{
+    color: black;
+}
+.about-ben-page .textContainer ul{
+    list-style: none;
+}
+.about-ben-page .textContainer ul li{
+    color: black;
+}
+
+
+
+
+
+/* SERVICES PAGE */
 .services-page{
     background-color: var(--main-color);
-    height: 100vh;
+    text-align: center;
+    padding: 40px;
 }
-.about-ben-page{
-    background-color: var(--second-color);
-    height: 100vh;
+.services-page .services{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
+.services-page .services .service{
+    width:250px;
+    height:250px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    transition: transform 0.8s;
+}
+.services-page .services .service:hover{
+    transform: rotateX(180deg);
+}
+.services-page .services .service h1{
+    font-weight: 100;
+    font-size: 30px;
+}
+.services-page .services .service .icon{
+    color: white;
+    font-size: 50px;
+    width:70px;
+    height:70px;
+    margin: 30px auto 30px auto;
+}
+
+
+
+
+
+
+/* CONTACT PAGE */
 .contact-page{
-    background-color: var(--main-color);
+    background-color: var(--second  -color);
     height: 100vh;
 }
 
@@ -145,7 +234,9 @@ input{
 
 
 /* ################  Mobile View  ############### */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 414px) {
+
+    /* NAVBAR */ 
     .navbar {padding: 30px 0 0 0;}
     .navbar-logo{margin-left: 10px;}
 
@@ -154,7 +245,7 @@ input{
         margin: 0;
         position: absolute;
         top: 15px;
-        right: 20px;
+        right: 15px;
         z-index: 2;
         text-align: center;
         line-height: 50px;
@@ -165,10 +256,15 @@ input{
     }
     #active:checked ~ .navbar-bars i:before{
         content: "\f00d";
+        color: white;
     }
     .fa-bars{
         color: white;
     }
+    html:not([data-scroll='0']) .fa-bars{
+        color: black;
+      }
+    
     
     .navbar-menu{
         position: fixed;
@@ -177,14 +273,15 @@ input{
         transform: translate(-50%,-50%);
         width: 100vw;
         height: 100vh;
-        clip-path: circle(25px at calc(100% - 45px) 40px );
-        background-color: var(--main-color);
+        clip-path: circle(20px at calc(100% - 48px) 40px );
+        background-color: transparent;
         transition: all 0.3s ease-in-out;
         
     }
 
     #active:checked ~ .navbar-menu{
         clip-path: circle(75%);
+        background-color: rgba(0, 0, 0, 0.8);
     }
    
 
@@ -203,6 +300,10 @@ input{
     .navbar-menu ul li a{cursor: default;}
     .navbar-line{margin-top: 10px;}
 
+    html:not([data-scroll='0']) .navbar-menu ul li a{
+        color: white;
+      }
+
 
     /* MOBILE HOME PAGE */
 
@@ -211,7 +312,7 @@ input{
         overflow: hidden;
     }
     .home-page .textContainer{
-        top: 60%;
+        top: 50%;
         left: 20px;
     }
     .home-page .imageContainer .desktop{
@@ -235,6 +336,23 @@ input{
     }
     .home-page .imageContainer .overlay{
         background:linear-gradient(180deg, transparent 0, transparent 20%, black);
+    }
+
+
+    /* SERVICES PAGE MOBILE VIEW */ 
+    .about-ben-page .imageContainer{
+        width: 100%;
+    }
+    .about-ben-page .textContainer{
+        width: 100%;
+        text-align: center;
+    }
+    .about-ben-page .textContainer .main-text{
+        margin-top: 0;
+    }
+    .about-ben-page .textContainer .accreditations{
+        position: static;
+        margin-top: 40px;
     }
     
     
