@@ -202,10 +202,6 @@ input{
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-    transition: transform 0.8s;
-}
-.services-page .services .service:hover{
-    transform: rotateX(180deg);
 }
 .services-page .services .service h1{
     font-weight: 100;
@@ -227,7 +223,31 @@ input{
 /* CONTACT PAGE */
 .contact-page{
     background-color: var(--second  -color);
-    height: 100vh;
+    padding: 50px 50px 20px 50px;
+}
+
+.contact-page .contacts h1{
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+}
+.contact-page .contacts p{
+    color: black;
+    font-weight: 100;
+    font-size: 15px;
+}
+.contact-page .media p{
+    color: black;
+    font-weight: 100;
+    font-size: 15px;
+}
+.contact-page .line{
+    width: 90%;
+    margin: 10px auto 10px auto;
+    border-bottom: solid black 1px;
+}
+.contact-page .footer p{
+    color: black;
 }
 
 
