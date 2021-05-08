@@ -184,7 +184,7 @@ input{
 
 /* SERVICES PAGE */
 .services-page{
-    background-color: var(--main-color);
+    background-color: rgba(0,0,0, 0.8);
     text-align: center;
     padding: 40px;
 }
@@ -223,32 +223,76 @@ input{
 /* CONTACT PAGE */
 .contact-page{
     background-color: var(--second  -color);
-    padding: 50px 50px 20px 50px;
+    position: relative;
+    z-index: -1;
+}
+.contact-page .imageContainer{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.contact-page .imageContainer img{
+    width: 100%;
+    margin: -5% 0 -20% 0;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+.contact-page .imageContainer .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:linear-gradient(90deg, transparent 0, transparent 20%, black);
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+   }
+.contact-page .textContainer{
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    z-index: 1;
+}
+.contact-page .textContainer .contacts h1{
+    color: white;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.contact-page .textContainer .contacts p{
+    color: white;
+    font-weight: 100;
 }
 
-.contact-page .contacts h1{
-    color: black;
-    font-weight: 100;
-    font-size: 20px;
+
+
+/* Footer */ 
+footer{
+    height: 50px;
+    margin-top: -50px;
+    z-index: 3;
+    position: relative;
 }
-.contact-page .contacts p{
-    color: black;
-    font-weight: 100;
-    font-size: 15px;
-}
-.contact-page .media p{
-    color: black;
-    font-weight: 100;
-    font-size: 15px;
-}
-.contact-page .line{
+footer .line{
     width: 90%;
-    margin: 10px auto 10px auto;
-    border-bottom: solid black 1px;
+    border-bottom: solid white 1px;
+    z-index: 3;
+    margin: auto;
 }
-.contact-page .footer p{
-    color: black;
+
+footer p{
+    color: white;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 5%;
+    margin: 10px 10px 30px 10px;
 }
+
+
 
 
 
@@ -359,7 +403,7 @@ input{
     }
 
 
-    /* SERVICES PAGE MOBILE VIEW */ 
+    /* About BEN PAGE MOBILE VIEW */ 
     .about-ben-page .imageContainer{
         width: 100%;
     }
@@ -375,5 +419,31 @@ input{
         margin-top: 40px;
     }
     
+
+    /* CONTACT PAGE MOBILE */
+    .contact-page .imageContainer img{
+        width: auto;
+        height: 100vh;
+        margin: -5% 0 -20% -40%;
+
+    }
+    .contact-page .imageContainer .overlay{
+
+        background:linear-gradient(90deg, transparent 0, rgba(0,0,0,0.7) 50%, black);
+
+       }
+    .contact-page .textContainer{
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        z-index: 1;
+    }
+    .contact-page .textContainer .contacts{
+        text-align: right;
+        font-weight: 100;
+    }
+    .contact-page .textContainer .media{
+        text-align: right;
+    }
     
   }
