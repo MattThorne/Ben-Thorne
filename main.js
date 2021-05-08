@@ -29,3 +29,11 @@ function check() {
   var checkbox = document.getElementById('active');
   checkbox.checked = !checkbox.checked
   }
+
+window.addEventListener("hashchange", function () {
+  console.log(this.location.hash)
+  if (this.location.hash == "#services") {
+    window.scrollTo(window.scrollX, window.scrollY - 50);
+  }
+    
+});

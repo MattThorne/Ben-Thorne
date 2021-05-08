@@ -4,6 +4,9 @@
     --main-color: grey;
     --second-color: white;
   }
+html {
+    scroll-behavior: smooth;
+  }
 
 * {
     font-family: 'Josefin Sans', sans-serif;
@@ -12,6 +15,7 @@
     margin: 0;
     padding: 0;
 }
+
 /*    Nav Bar    */
 
 .navbar {
