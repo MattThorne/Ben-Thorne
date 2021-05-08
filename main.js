@@ -24,3 +24,8 @@ const debounce = (fn) => {
   
   // Update scroll position for first time
   storeScroll();
+
+function check() {
+  var checkbox = document.getElementById('active');
+  checkbox.checked = !checkbox.checked
+  }

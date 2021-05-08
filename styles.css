@@ -48,14 +48,20 @@ html:not([data-scroll='0']) .navbar-logo h1{
     
     transition: color 0.5s ease;
     text-decoration: none;
+    position: relative;
+    transition: border-bottom ease 0.2s;
     
 }
 html:not([data-scroll='0']) .navbar-menu ul li a{
     color: black;
+    transition: border-bottom ease 0.2s;
   }
 
-.navbar-menu ul li a:hover, html:not([data-scroll='0']) .navbar-menu ul li a:hover{
-    color: var(--secondary-font-color);
+.navbar-menu ul li a:hover {
+    border-bottom: solid white 1px;
+}
+html:not([data-scroll='0']) .navbar-menu ul li a:hover{
+    border-bottom: solid black 1px;
 }
 .navbar-bars{
     display: none;
@@ -339,8 +345,7 @@ footer p{
         height: 100vh;
         clip-path: circle(20px at calc(100% - 48px) 40px );
         background-color: transparent;
-        transition: all 0.3s ease-in-out;
-        
+        transition: all 0.3s ease-in-out;    
     }
 
     #active:checked ~ .navbar-menu{
@@ -367,6 +372,11 @@ footer p{
     html:not([data-scroll='0']) .navbar-menu ul li a{
         color: white;
       }
+
+    .navbar-menu ul li a:hover, html:not([data-scroll='0']) .navbar-menu ul li a:hover {
+        border-bottom: solid white 1px;
+    }
+
 
 
     /* MOBILE HOME PAGE */
