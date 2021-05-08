@@ -49,20 +49,36 @@ html:not([data-scroll='0']) .navbar-logo h1{
     transition: color 0.5s ease;
     text-decoration: none;
     position: relative;
-    transition: border-bottom ease 0.2s;
     
 }
 html:not([data-scroll='0']) .navbar-menu ul li a{
     color: black;
-    transition: border-bottom ease 0.2s;
+    position: relative;
   }
 
-.navbar-menu ul li a:hover {
+.navbar-menu ul li a::after, html:not([data-scroll='0']) .navbar-menu ul li a::after{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: 50%;
+    background: transparent;
+    z-index: -1;
+    transition: 0.5s;
+    border-bottom: solid white 1px;
+    content: ''; 
+  }
+.navbar-menu ul li a::after{
     border-bottom: solid white 1px;
 }
-html:not([data-scroll='0']) .navbar-menu ul li a:hover{
+
+html:not([data-scroll='0']) .navbar-menu ul li a::after{
     border-bottom: solid black 1px;
+  }
+.navbar-menu ul li a:hover::after, html:not([data-scroll='0']) .navbar-menu ul li a:hover::after{
+    width: 100%;
+    right: 0%;  
 }
+
 .navbar-bars{
     display: none;
     color: black;
@@ -373,9 +389,7 @@ footer p{
         color: white;
       }
 
-    .navbar-menu ul li a:hover, html:not([data-scroll='0']) .navbar-menu ul li a:hover {
-        border-bottom: solid white 1px;
-    }
+
 
 
 
