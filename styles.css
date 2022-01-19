@@ -133,19 +133,16 @@ input{
     font-size: 40px;
     font-weight: 300;
 }
-.home-page .textContainer h2{
-    font-weight: 100;
-    margin-right: 10px;
-}
 .home-page .imageContainer .mobile{
     display: none;
 }
-
 .home-page .imageContainer{
     width: 100%;
     padding: 0;
     margin: 0;
     z-index: -1;
+    max-height: 600px;
+    overflow: hidden;
 }
 .home-page .imageContainer img{
     width: 100%;
@@ -165,6 +162,21 @@ input{
     padding: 0;
     margin: 0;
    }
+
+
+/* Information Page */
+
+.information .textContainer{
+    margin: 50px auto 50px 10%;
+    width: 80%;
+}
+.information .textContainer p{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.information .textContainer p, .information .textContainer h1 {
+    color: black;
+}
 
 
 
@@ -193,29 +205,11 @@ input{
     text-align: left;
     
 }
-.about-ben-page .textContainer .main-text{
-    font-size: 30px;
+.about-ben-page .textContainer p{
+    font-size: 25px;
     margin-top: 20px;
     color: black;
     
-}
-.about-ben-page .textContainer .accreditations{
-    margin-top: 50px;
-}
-.about-ben-page .textContainer .accreditations h1{
-    margin: 0 0 20px 0;
-    font-size: 25px;
-    font-weight: 100;
-    color: black;
-}
-.about-ben-page .textContainer .accreditations p{
-    color: black;
-}
-.about-ben-page .textContainer ul{
-    list-style: none;
-}
-.about-ben-page .textContainer ul li{
-    color: black;
 }
 
 
@@ -227,33 +221,50 @@ input{
     background-color: rgba(0,0,0, 0.8);
     text-align: center;
     padding: 40px;
+    height: 400px;
+    overflow: hidden;
 }
 .services-page .services{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
+    
+    
 }
+.questionsContainer{
+    height: 100%;
+    overflow: hidden;
+}
+.questions{
+    transition: transform 0.5s;
+}
+/* .services-page .services:hover{
+    transform:translateY(-100%)
+} */
 .services-page .services .service{
+    display: flex;
     width:250px;
-    height:250px;
+    height: 200px;
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.services-page .services .service:hover{
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.5), 0 6px 20px 0 rgba(1, 1, 1, 0.5);
 }
 .services-page .services .service h1{
     font-weight: 100;
     font-size: 30px;
 }
-.services-page .services .service .icon{
-    color: white;
-    font-size: 50px;
-    width:70px;
-    height:70px;
-    margin: 30px auto 30px auto;
+.services-page .retake{
+    margin-top: 10px;
 }
+
 
 
 
@@ -386,6 +397,9 @@ footer p{
         clip-path: circle(75%);
         background-color: rgba(0, 0, 0, 0.8);
     }
+    #active:not(:checked) ~ .navbar-menu{
+        pointer-events: none
+    }
    
 
     .navbar-menu ul{
@@ -456,10 +470,22 @@ footer p{
     .about-ben-page .textContainer .main-text{
         margin-top: 0;
     }
-    .about-ben-page .textContainer .accreditations{
-        position: static;
-        margin-top: 40px;
+
+    /* Services page  MOBILE*/
+
+    .services-page{
+        height: 700px;
+
     }
+    .services-page .services .service{
+        height: 150px;
+    }
+    .services-page .services .service h1{
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+
     
 
     /* CONTACT PAGE MOBILE */

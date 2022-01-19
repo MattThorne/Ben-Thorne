@@ -1,111 +1,146 @@
 <!DOCTYPE html>
-  <head>
-    <title>Ben Thorne - Strength and Conditioning Coach</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    
 
-  </head>
+<head>
+  <title>Ben Thorne - Strength and Conditioning Coach</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-  <body>
-    <div class="navbar">
-      <div class="navbar-logo"><h1>BT</h1></div>
-      <input type="checkbox" id="active"/>
-      <label for="active" class="navbar-bars"><i class="fa fa-bars"></i></label>
-      
-      <div class="navbar-menu">
-        <ul>
-          <li><a href="#aboutBen" onclick=check()>About Ben</a></li>
-          <li><a href="#services" onclick=check()>Services</a></li>
-          <li><a href="#contactBen" onclick=check()>Contact Ben</a></li>
-        </ul>
-      </div>
-      <div class="navbar-line"></div>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <h1>BT</h1>
     </div>
+    <input type="checkbox" id="active" />
+    <label for="active" class="navbar-bars"><i class="fa fa-bars"></i></label>
 
-
-    <div class="home-page page">
-      <div class="imageContainer">
-        <img src="images/IMG_2221.JPG" class="desktop" alt="Profile Picture of Ben">
-        <img src="images/IMG_2247.JPG" class="mobile" alt="Profile Picture of Ben">
-        <div class="overlay"></div>
-      </div>
-      <div class="textContainer">
-        <h1>Professional Performance Coach</h1>
-        <h2>For sport, coorporate and private clients</h2>
-      </div>
-      
-      
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#aboutBen" onclick=check()>About Ben</a></li>
+        <li><a href="#services" onclick=check()>Services</a></li>
+        <li><a href="#contactBen" onclick=check()>Contact Ben</a></li>
+      </ul>
     </div>
+    <div class="navbar-line"></div>
+  </div>
 
 
-    <div class="about-ben-page page" id="aboutBen">
-      <div class="imageContainer">
-        <img src="images/IMG_1583.JPG" class="mobile" alt="Profile Picture of Ben">
-      </div>
-      <div class="textContainer">
-        <p class="main-text">Ben currently works in Formula 1 and with coorporate clients. He has previously worked in proffesional football across 4 elite clubs</p>
-        <div class="accreditations">
-          <h1>Accreditations</h1>
-          <ul>
-            <li>Masters degre in S&C</li>
-            <li>UKSCA</li>
-            <li>BASES Accredited scientist</li>
-            <li>ITEC level 4 sports</li>
-            <li>Massage Qulaified</li>
-          </ul>
-        </div>
-        
-      </div>
+  <div class="home-page page">
+    <div class="imageContainer">
+      <img src="images/IMG_2221.JPG" class="desktop" alt="Profile Picture of Ben">
+      <img src="images/IMG_2247.JPG" class="mobile" alt="Profile Picture of Ben">
+      <div class="overlay"></div>
     </div>
-
-    <div class="services-page page" id="services">
-      <h1>SERVICES</h1>
-      <div class="services">
-        <div class="service">
-          <div class="icon"><i class="fas fa-laptop"></i></div>
-          <h1>1 to 1 Remote Consulting</h1>
-        </div>
-        <div class="service">
-          <div class="icon"><i class="fas fa-carrot"></i></div>
-          <h1>Expert Nutritional Advice</h1>
-        </div>
-        <div class="service">
-          <div class="icon"><i class="fas fa-user-friends"></i></div>
-          <h1>1 to 1 Private Coaching</h1>
-        </div>
-     </div>
+    <div class="textContainer">
+      <h1>Elite Performance Coaching</h1>
     </div>
+  </div>
+
+  <div class="information">
+    <div class="textContainer">
+      <h1>Optimise Your Performance</h1>
+      <p>Be coached at an elite level to improve your performance at work, an event or a sport.</p>
+      <p>This coaching focuses on several aspects of performance including physical training, nutrition, and recovery.
+      </p>
+      <p>Find out what service you need to reach your performance goal</p>
+    </div>
+  </div>
 
 
-    <div class="contact-page page" id="contactBen">
-      <div class="imageContainer">
-        <img src="images/IMG_2229.JPG" alt="Picture of ben by F1 car">
-        <div class="overlay"></div>
-      </div>
-      
-      <div class="textContainer">
-        <div class="contacts">
-          <h1>Contact Ben</h1>
-          <p>07907813323</p>
-          <p>benthorne@gmail.com</p>
+
+
+  <div class="services-page page" id="services">
+    <h1>What is Your Goal?</h1>
+    <div class="questionsContainer">
+      <div class="questions" id="questions">
+        <div class="services">
+          <div class="service">
+            <h1>Preparing For an Event</h1>
+          </div>
+          <div class="service">
+            <h1>Improve My Performance at Work</h1>
+          </div>
+          <div class="service">
+            <h1>Improve My Sport</h1>
+          </div>
         </div>
-        <div class="media">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin-in"></i>
+        <div class="services">
+          <div class="service">
+            <h1>Wanting a Program to Follow</h1>
+          </div>
+          <div class="service">
+            <h1>Working a Program and Coaching Guidance</h1>
+          </div>
+          <div class="service">
+            <h1>Wanting a Program and Coaching Guidance and Regular Monitoring</h1>
+          </div>
+        </div>
+        <div class="services">
+          <div class="service">
+            <h1>Build The Foundations</h1>
+          </div>
+          <div class="service">
+            <h1>Optimise</h1>
+          </div>
+          <div class="service">
+            <h1>Premium Coaching</h1>
+          </div>
+        </div>
+        <div class="retake">
+          <p>Retake Survey</p>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="line"></div>
-      <p>© 2021 Ben Thorne Ltd</p>
-    </footer>
-  </body>
-  <script type="text/javascript" src="main.js"></script>
+  </div>
+
+  <div class="about-ben-page page" id="aboutBen">
+    <div class="imageContainer">
+      <img src="images/IMG_1583.JPG" class="mobile" alt="Profile Picture of Ben">
+    </div>
+    <div class="textContainer">
+      <p>Ben is a Performance Coach currently working with a Formula 1 driver, private corporate
+        clients, as well as professional and recreational athletes.</p>
+      <p>He has a Master’s degree in Strength & Conditioning and a Sports and Exercise Science Degree. He is a Charted
+        Scientist and UKSCA accredited Strength and Conditioning Specialist.</p>
+      <p>Ben has previous experience working in Premier League football and University sport.</p>
+
+
+    </div>
+  </div>
+
+
+  <div class="contact-page page" id="contactBen">
+    <div class="imageContainer">
+      <img src="images/IMG_2229.JPG" alt="Picture of ben by F1 car">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="textContainer">
+      <div class="contacts">
+        <h1>Contact Ben</h1>
+        <p>benthorneltd@outlook.com</p>
+      </div>
+      <div class="media">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="line"></div>
+    <p>© 2022 Ben Thorne Ltd</p>
+  </footer>
+</body>
+<script type="text/javascript" src="main.js"></script>
+
 </html>
