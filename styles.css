@@ -125,7 +125,7 @@ input{
 }
 .home-page .textContainer{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 10%;
 }
 .home-page .textContainer h1{
@@ -193,6 +193,8 @@ input{
 .about-ben-page .imageContainer{
     width: 40%;
     padding: 50px;
+    max-height: 1000px;
+    overflow: hidden;
     
 }
 .about-ben-page .imageContainer img{
@@ -202,14 +204,12 @@ input{
     position: relative;
     width: 30%;
     margin: 50px;
-    text-align: left;
-    
+    text-align: left;   
 }
 .about-ben-page .textContainer p{
     font-size: 25px;
     margin-top: 20px;
-    color: black;
-    
+    color: black;   
 }
 
 
