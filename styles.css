@@ -141,6 +141,22 @@ input{
     font-size: 40px;
     font-weight: 300;
 }
+.home-page .textContainer h2{
+    margin-bottom: 30px;
+}
+
+.home-page .textContainer a{
+    text-decoration: none;
+    border: white solid 1px;
+    padding: 20px;
+    border-radius: 4px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.home-page .textContainer a:hover{
+    background-color: white;
+    color: black;
+}
+
 .home-page .imageContainer .mobile{
     display: none;
 }
@@ -349,7 +365,7 @@ footer p{
     position: absolute;
     display: block;
     top: 0;
-    right: 5%;
+    left: 5%;
     margin: 10px 10px 30px 10px;
 }
 
