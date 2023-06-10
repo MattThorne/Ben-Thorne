@@ -311,14 +311,17 @@ footer p {
 
     /* MOBILE HOME PAGE */
 
-    .home-page {
-        height: 100vh;
-        overflow: hidden;
-    }
+
 
     .home-page .textContainer {
-        top: 30%;
+        top: 40%;
         left: 10px;
+    }
+
+    .home-page .textContainer h1 {
+        padding: 0 0 20px 0;
+        font-size: 30px;
+        font-weight: 300;
     }
 
     .home-page .imageContainer .desktop {
